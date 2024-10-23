@@ -4,7 +4,7 @@ import ReviewPost from "./ReviewPost";
 
 const AllPost = ({ post }) => {
   return (
-    <div className="max-w-md mx-auto my-4 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800 hover:shadow-xl transition-shadow duration-300">
+    <div className="max-w-md mx-auto my-4 mt-10 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800 hover:shadow-xl transition-shadow duration-300">
       <div className="flex flex-col h-full">
         <div className="flex-grow">
           <div className="py-2">

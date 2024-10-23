@@ -29,7 +29,7 @@ const SearchFilter = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap mt-4">
+      <div className="flex flex-wrap mt-10">
         <span className="cursor-pointer px-3 py-1 rounded-full text-sm font-semibold mr-2 mb-2 bg-indigo-500 text-white">
           All
         </span>

@@ -9,7 +9,7 @@ const Layout = () => {
         <div>
           <Navbar />
         </div>
-        <div className="dark:bg-slate-700 min-h-screen">
+        <div className="dark:bg-slate-800 min-h-screen">
           <Outlet />
         </div>
       </div>

@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import DropdownFilter from "./DropdownFilter";
+import { FaSearch } from "react-icons/fa";
 
 const SearchFilter = () => {
+  function formHandler(e) {
+    e.preventDefafult();
+  }
   return (
     <div className="flex flex-col items-center p-4 bg-white shadow-md rounded-lg dark:bg-gray-800 transition-all duration-300">
       <div className="flex justify-between w-full container">
         <div>
-          <input
-            type="text"
-            placeholder="Search posts by title..."
-            className="w-full max-w-2xl p-2 border border-gray-300 rounded-md dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
+          <form action="" onSubmit={formHandler} className="flex items-center ">
+            <input
+              type="text"
+              placeholder="Search posts by title..."
+              className="w-80 p-2 border border-gray-300 rounded-l-md dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none "
+            />
+            <button
+              type="submit"
+              className="py-2 flex items-center space-x-2  px-1 border border-indigo-500  rounded-r-md bg-indigo-500"
+            >
+              <span>Search</span>
+            </button>
+          </form>
         </div>
         <div>
           <DropdownFilter />

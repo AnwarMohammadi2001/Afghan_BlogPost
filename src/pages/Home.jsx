@@ -5,7 +5,7 @@ import SearchFilter from "../components/SearchFilter";
 
 const Home = () => {
   return (
-    <div className=" w-full min-h-fit  pt-10">
+    <div className=" w-full min-h-fit py-5">
       <div>
         <SearchFilter />
       </div>

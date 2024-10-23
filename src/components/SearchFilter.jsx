@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DropdownFilter from "./DropdownFilter";
 import { FaSearch } from "react-icons/fa";
+import CategoryFiltering from "./categoryFiltering";
 
 const SearchFilter = () => {
   function formHandler(e) {
@@ -24,9 +25,14 @@ const SearchFilter = () => {
             </button>
           </form>
         </div>
+       <div className="flex items-center space-x-10">
+       <div>
+          <CategoryFiltering />
+        </div>
         <div>
           <DropdownFilter />
         </div>
+       </div>
       </div>
 
       <div className="flex flex-wrap mt-10">

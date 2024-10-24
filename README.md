@@ -1,6 +1,6 @@
- Afghan Blog
+###  Afghan Blog
 
-A modern blog platform built with React and Tailwind CSS
+## A modern blog platform built with React and Tailwind CSS
 
 Project Overview
 Blog Afghan is a fully responsive and modern blog platform where users can read and share posts. This platform offers a clean, intuitive interface with dark mode support. Users can filter blog posts by categories, like posts, leave comments, and share their favorite content. This project is ideal for those looking to explore and practice building React-based applications with Tailwind CSS.

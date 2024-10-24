@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-10">
             <div>
               <span className="text-3xl font-extrabold text-indigo-700 dark:text-indigo-400">
-                 Afghan Blog
+                Afghan Blog
               </span>
             </div>
             {/* Navbar Item */}

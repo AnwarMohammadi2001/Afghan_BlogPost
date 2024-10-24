@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaUser } from "react-icons/fa6";
 import { FaEdit } from "react-icons/fa";
 import { MdOutlineMoreVert } from "react-icons/md";
 
-const Navpost = () => {
+
+const Navpost = ({post}) => {
   return (
     <div className="w-full h-12 flex justify-between items-center bg-white  px-3 rounded-lg dark:bg-gray-800 dark:shadow-lg transition-all duration-300">
       <div className="flex items-center space-x-3">
         <div className="rounded-full p-2 bg-indigo-500 text-white">
-          <FaUser className="text-xl" />
+          <FaUser />
         </div>
       </div>
 

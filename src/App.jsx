@@ -12,20 +12,23 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Category from "./pages/Category";
 import BlogPost from "./pages/BlogPost";
+import ContextProvider from "./Context/ContextProvider";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/category" element={<Category />} />
-          <Route path="/blogpost" element={<BlogPost />} />
-        </Route>
-      </Routes>
-    </Router>
+    <ContextProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/category" element={<Category />} />
+            <Route path="/blogpost" element={<BlogPost />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ContextProvider>
   );
 }
 
